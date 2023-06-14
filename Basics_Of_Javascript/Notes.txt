@@ -144,7 +144,119 @@ when we write one line of js code that is equivalent to one complete instruction
         =,+=,-=,*=,/=,%=
         let a =10;
         a+=2;- means a is equal to a+2.
-        
+    2.11.3- Relational operators
+        >,<,>=,<=,
+        - JS gives true or false with relational ops.
+
+    2.11.4- Logical Operators
+        Boolean logic gates {INPUT ARE IN THE FORM OF TRUE FALSE 0/1}
+        -AND gate {*}
+        if one input is false, and gate doesnt even see the second input it directly return false(first input).
+        as well as if first input is true, then the second input has to be evaluated and then second input is  returned.
+
+
+        X|Y|X AND Y
+        F|F|FALSE
+        T|F|FALSE
+        F|T|FALSE
+        T|T|TRUE
+
+        OR GATE  (+)
+        X|y|x or Y
+        f|F|false
+        F|T|TRUE
+        T|F|TRUE
+        T|T|TRUE
+        in or gate, if anyone of the input is true ,it doesnt matter what the second input is just return the first input.
+        if the first input is false return the second one.
+
+
+        NOT gate !
+        t-F
+        f-T
+    2.11.4.1- and operator &&
+                or operator ||
+                not op- !
+
+2.11.5- short circuiting and coercion introduction
+ques- what values are falsy in js?
+    -null
+    -undefined
+    -"" -empty String
+    - +0,-0,NaN- FALSE
+    -FALSE-falsy
+    apart from these everything in js is truthy.
+
+    Ques- how js do these conversion? using concept of coercion.
+
+2.11.6- special numbers
+    0,-0,NaN->numbers
+
+    quantities- magnitude+direction
+    
+    NaN-if there is a situation where we are bound to return a number but there is no valid possible number to return then we use nan.
+
+    console.log(10/null); - infinity
+    console.log(undefined/null);-nan
+
+ques- which is the only number which is not equal to itself? 
+ans- nan
+
+2.11.7- Bitwise operators
+    5-101 (binary)
+    Bitiwise operators performs the corresponding operations bit by bit on a given operand.
+    &- bitwise and
+    |- bitwise or
+    ~- bitwise not
+    ^- bitwise xor
+
+    console.log(5&&7) -> return 7 as logic and gate
+    but in case of bitwise and
+    console.log(5 & 7);
+    101 & 111 - 101
+    return 5;
+
+    6 & 9
+    0110 & 1001 - 0000
+    return 0;
+
+    2 & 5 
+    010 & 101 - 000
+    return 0;
+
+    15 & 6
+    1111 & 0110- 0110
+    return 6;
+
+    5 & 6
+    0101 & 0110- 0100
+    return 4;
+ 
+    5 | 6
+    1010 | 0110- 0111
+    return 7;
+
+    8 |4
+    1000 | 0100-1100
+    return 12;
+
+    
+
+
+
+
+
+
+
+
+     
+
+
+    
+
+
+
+
 
 
 
