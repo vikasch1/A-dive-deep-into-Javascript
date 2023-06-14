@@ -1,0 +1,172 @@
+#1-Basics of JS
+1.1-multiparadigm programming language
+      -functional programming
+    -object oriented programming 
+
+Code of software(Program)--->run-->loaded to our RAM-it becomes a process.
+
+1.2-Keywords
+in a programming language. few words are reserved by the language for its own purpose. we can not chnage their meaning or re purpose them for a different use case.
+i.e in JS,few keywords are - let,var,const,if else, return etc.
+
+Ques- How can we store some values inside a program?
+To store some values we use variables.
+RAM->process space -> Bucket(name/label)-inside the bucket we store the data.
+Variables are memory bucket that stores our value and has a name also.
+
+#2-Coding variables in JS
+    3 ways to create variables
+    2.1-using var keyword
+    var <variable name> =<value>;
+    var marks=90;
+    var score=5;
+
+    2.2- using let keyword
+    let <variable-name>=<value>;
+    let age =24;
+    let flag=0;
+
+    2.3- using const keyword
+    const <variable-name>=<value>
+    const x=100;
+
+
+2.4- semicolon
+when we write one line of js code that is equivalent to one complete instruction.its a ststament,at the end of every statement in js we can put a semicolon but (its optional.)its recommended to write sensible js code so use semicolon after every valid js statement.
+
+2.5- Namaing rules
+
+    2.5.1- variable can contain small alphabets ,capital alphabet,digits ,underscore.
+    2.5.2. we van not have space or any other special character.
+    2.5.3. we should give meaningful names so that reader can idenity the names properly.
+    2.5.4- variables name can not be start with a digit but it can have digits in between or at the last.
+    i.e 0james=10; x
+    2.5.5- we can not use keywords as variables.
+
+2.6 - showing data to User
+    input->function(acts as a blackbox->output)
+    2.6.1- console.log -inbuilt function 
+        this function takes some data as an input and then displays them in the output.
+        console.log(10);
+    2.6.2- if we have 2 different console.log() then both of them displays/prints output in different line.
+    we can also pass multiple values together to console.log()and all of them will be on same line.
+    console.log(10,"starting",age);-comma seperated values.
+
+
+2.7 - what all values we can store in js?
+    (official docume3nttaion of js is written by ecma international)
+    we can also refer MDN from mozilla.
+    2.7.1-  Number-> 10,-3,2.6,3.44,1000 etc
+            String -> "Texts",'text',`text`
+            Boolean -> true,false {also a keywords in js}
+            undefined- also a keyword in js .something not defined yet but may be defined later.
+            Objects->if we have to somehow store key value pairs then we can use objects.{
+                <key,value>-keys will be unique.
+                name:"vikas"
+                company:'Google'
+                position:"software engg"
+            }
+            {
+                name:"rahul"
+                company:"phonepe"
+                position:"backend engg"
+            }
+            {
+                NAME:'IPHONE'
+                COST:125000
+                COLOR:'ROSE GOLD'
+                DISCOUNT:5
+                DESC:"THE NEW APPLE IPHONE"
+            }
+            *Null and undeifned both shows sense of emptiness.
+            let a; ---undefined
+            let b =10;
+            b=null; - now value is empty
+            Null-sense of emptiness
+            it actually represents empty value.
+
+
+
+
+
+             
+            var condition=true;
+            var status =undefined;
+            var score=70;
+            var player_name="Dhoni";
+           
+        
+
+
+
+#2.8-Types of data
+    Primitve-types which are atomic in nature.
+    Non Primitive-types which are a composotion of other types i.e objects.
+ {
+    name:"vikas"
+    age:25
+    posts:{
+        creationdate:"june 12,2022"
+        texts:"my first post"
+    }
+    gender:"male"
+
+ } 
+ objects inside objects (nesting )
+
+
+
+ 2.9 - special charcters,escape sequence
+ "the name apple "iphone"
+ "has been launched"
+
+ "the new apple iphone \n has been laucnhed" 
+
+
+ 2.10- comments
+    comments are a piece of code that is for documentation purpose. 
+    the programming langyage ,will just avoid comments during execution.
+    2.10.1- single line comment -//
+    2.10.2- multiline comment - /*.....*/
+
+
+2.11- Operators/Arithmatic and Assignment
+    -there are different types of Operators.
+    1-Arithmatic Operators
+        +-addition
+        --subtraction
+        /--devision
+        *-multiplication
+        %-modulo
+        **-exponent
+    operand - value on which we use the operation.
+    2.11.2- Assignment Operators
+        =,+=,-=,*=,/=,%=
+        let a =10;
+        a+=2;- means a is equal to a+2.
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
