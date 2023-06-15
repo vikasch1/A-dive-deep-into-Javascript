@@ -240,10 +240,39 @@ ans- nan
     1000 | 0100-1100
     return 12;
 
-    
+2.11.8- Equality operator
+    ==   abstract equality 
+    ===   strict equality operator
+
+(100% wrong )- == checks value,=== checks value+type 
+in official js documentation- both of them checks the type check.
+==-> it checks the types pf both operand if type is same ,then it calls ===.
+if the types are not same ,then type conversion occurs (coercion) and then comparison is done.
+
+=== -> it also checks the types of both the operand ,if types are different it returns false.
+if types are same , then value comparison occurs.
+
+major ifference-== do the type conversion but === doesnt do type conversion.
 
 
+1=="1"
+return true;
+why?
+step 1 -type checks
+number and string
+it convert string to number and again it will do again the comparison.then it calls ===,it return true.
 
+
+1- null,udefined - true
+2-undefined ,null-true
+
+
+console.log(Nan===Nan); //false
+type of nan is number, type of nan is number
+if first args is nan ,it will directly returns false, it will not see even 2nd args i.e NaN
+
+2.11.9- type of operator
+console.log(typeof(Number));
 
 
 
@@ -253,6 +282,14 @@ ans- nan
 
 
     
+
+
+
+
+
+
+
+
 
 
 

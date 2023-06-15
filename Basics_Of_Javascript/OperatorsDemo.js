@@ -69,6 +69,25 @@ console.log(NaN==NaN);
 console.log(NaN===NaN);
 
 
+console.log(1=="1"); //true
+console.log(1=="vikas"); //false
+//vikas will convert to a number i.e invalid number i.e Nan
+
+
+console.log(typeof 1);
+console.log(typeof "1");
+console.log(typeof null); //mistake - it returns objects, it should return null.
+console.log(typeof Number );
+console.log(typeof undefined);
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,70 @@
+Decision making capability - conditional statements
+
+Executing some piece of instruction --> condition --> go to this else go to that.
+
+1- if and else statements
+    if and else are keywords in js.
+    syntax : if(condition/expression){
+        //do some work  {if block}
+
+    }
+
+1.2- if (condition){
+    //do soem work
+
+}else{
+    //do some work
+}
+     if block can exist with else block but else bloack cant exist without if block.
+
+
+1.3- if else and nested conditionals
+The first truth checks !
+        if(condition){
+            //do some work
+
+        }else if(condition){
+                //do some work
+
+        }else{
+                //do some work
+
+        }
+if can exist without else if and else.
+else can not exist without if but can exist without else if.
+else if can not exist without if but can exist without else.
+
+    if(isuserprime && isuserdiscovery){
+        //both content
+    }else if(isuserprime){
+        //only prime content
+    }else{
+        //buy something.
+    }
+
+    Nested if else 
+        if(isuserprime){
+             if(isuserdiscovery){
+                //show both
+
+             }else{
+                //show only prime
+
+             }
+        }else{
+            //buy something.
+        }
+
+
+problem 1 : given a number x ,check if its an even number or odd number?
+problem2 : consider three integers values, and find the ,minimum value among the given input values?
+problem 3 : is a valid triangle?  
+problem4 : given the side length of a triangle in the form of 3 integers .check if the given triangle is equilateral pr scalene or isescels triangle?
+    i.e a=7,b=7,c=7 => equilateral
+    a=8,b=14,c=8 => isosceles
+    
+
+
+
+     
+

@@ -1,0 +1,44 @@
+Things to do again n again.
+same task repeatedly.
+using loops we will be able to repeat a task again n again.
+
+ques- write a program to print the numbers from 1 to N?
+let i=1;
+let N =100;
+while(i<=N){
+    console.log(i);
+    i=i+1;
+}
+
+let N =50;
+for(let i=1;i<=N;i++){
+     console.log(i);
+
+}
+
+ques= what is the difference bw while and if?
+if will only check the condition once,doesnt matter if the condition is true or false. it will only check it once.
+whereas while loop checks condition again n again ,till the time it becomes false.
+
+
+problem 1: WAP to calculate sum of all the no. from 1 to 10?
+
+
+    #For Loop;
+    for loops are one more way to do same thing as of while loop.there is no particular advantage of using a particular loop.
+    in for loops the difference is only in syntax.
+    for(initiate;conditiom;update){
+        //do some work.
+    }
+
+        variable initiate;
+        while(condition){
+            ..logic
+            update
+        }
+
+
+problem - print 1 to 10 using for loop?
+
+
+
