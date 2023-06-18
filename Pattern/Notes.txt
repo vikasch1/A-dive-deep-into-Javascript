@@ -1,0 +1,9 @@
++ operator in js
+ if any one of either left or right operand is a string thrn js automatically converts the other operand into string and join(concatenation them).
+
+ "vikas+"chaudahry"-vikaschaudhary
+
+ "vikas"+10-vikas10 //coercion.
+
+ string concetination always creates new string, it doesnt change/modify the old string(string immutablity).
+ 
