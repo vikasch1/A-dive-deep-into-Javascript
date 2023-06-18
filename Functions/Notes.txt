@@ -1,0 +1,66 @@
+            Functions 
+    -DRY - DONT REPEAT YOURSELF
+    if you have already done a task why do you want to do it again n again?
+
+Functions - mathametical concept
+input->function->output
+f(x,y)=x+y
+a Function is a blackbox ,inside the function what it is there we dont care.
+    -inbuilt function in js
+            -Math.sqrt
+            -print function 
+            etc
+
+now if we use functions , then we can store our logic inside the fucntion and doesnt matter how many times we want to use it.we will just call the function.
+
+    #custom functions in js
+    function myfun(input1,input2,input3){
+
+        //logic for my function
+
+        return output;
+    }
+
+#create a function to check if a number is even or odd
+        function evenoddcheck(number){
+            if(number%2==0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        let x =10;
+        if(evenoddcheck(10)==true){
+            console.log(x,"is even);
+        }
+
+
+#debugging a function.
+
+    console.log("hello);
+    console-object
+    log-key
+    value-function(){}
+    console.log-function
+    does it return something?
+    yes it returns undefined.
+
+what if we dont return anything?
+in js if we dont manually return something it automatically returns undefined.
+in js a fucntion always return something i.e undefined.
+
+#Arguments and parameters
+function add(x,y){ //function defination-parameters
+    let c =x+y;
+    return c;
+}
+
+let a =10;
+let b =20;
+let result =add(a,b); //calling function-Arguments
+
+
+
+
+
