@@ -41,4 +41,9 @@ problem 1: WAP to calculate sum of all the no. from 1 to 10?
 problem - print 1 to 10 using for loop?
 
 
+# entry control (while loop)and exit control loop(do while lopp)?
+
+
+
+
 

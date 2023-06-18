@@ -1,0 +1,89 @@
+MISCELLANEOUS FUNDAMENTAL TOPICS IN js
+        1-Unary Operators
+            let a =10;
+            a++;
+
+            let a =10;
+            let y=a++;
+
+            let a =9;
+            let y=++a;
+
+    a++ - postfix unary addition (inc after assignment)
+    y=a++;
+    step1- we first assign the value of a (old value) to y.
+    step2- then value of a is incremented by 1.
+
+    ++a - prefix (inc first then assign)
+    let a =10;
+    y=++a;
+
+
+a-- - first assignment then decrement
+--a = first decrement then assign
+
+
+# unary +  - it tries to convert a variable into a number if its not already a number.
++x
+
+# unary - = it also converts a variable into number but it always gives negative value;
+-x;
+
+#typeof operator
+
+#Ternary operator -- ? :
+let y =(condition)?(exp1):(exp2);
+if condition true, result- exp1
+if condition false, resulu-exp 2
+
+
+# if else vs ternary operation?
+for one liner logic go for ternary.
+for multiple things go for if else or else if.
+
+
+#switch case
+switch-keyword
+        syntax:
+                switch(value or expression){
+                    case value1 :
+                    //logic
+                    break;
+                    case value 2 :
+                      //logic
+                    break;
+
+                    case value 3 :
+                      //logic
+                    break;
+
+
+                    default:
+                }
+        switch(value/expression)
+            whatever value of expression gets calculated ,we can use that value and check for the case.
+    -- default is not mandatory, if none of the case matches, it wont give any output.
+    -- it is madatory to put break as to perform logical separation. 
+
+
+# roots of quad eqn?
+         D formula
+         two roots
+
+
+# string comparison
+in ===, if the types are different, it immediately return false.
+but in ==, if typeS ARE DIFF , IT TRIES TO CHANGE THE TYPE(TYPE CONVERSION)
+        
+
+
+
+
+
+
+
+
+
+
+
+
