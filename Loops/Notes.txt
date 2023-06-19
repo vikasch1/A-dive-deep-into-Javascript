@@ -43,6 +43,29 @@ problem - print 1 to 10 using for loop?
 
 # entry control (while loop)and exit control loop(do while lopp)?
 
+# Euclid's algo to calculate gcd.
+    a/b => q (qt),remainder(r).
+    a=bq+r;
+    let G is the gcd of a and b.
+    then a%g==0 && b%g==0;
+
+        a-bq=r;
+    g%(a-bq)=g%r;
+i.e a=105, b =36
+r1=105%36 =33
+ a=36,b=33
+ r2=3
+a=33, b =3;
+r3=3
+gcd=3;
+
+
+#math.floor and math.ceil
+math.floor(6.3)=6
+math.floor(6)=6
+
+
+
 
 
 
