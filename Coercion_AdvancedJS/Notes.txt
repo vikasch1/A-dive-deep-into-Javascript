@@ -1,0 +1,74 @@
+Ques- What happens when you hit Www.google.com on our browser? what goes behind the scene?
+    
+    Client side(Mobile,browser) , server side (available over the netwroks)
+    -we need to fetch the IP Address of google servers.
+    -our browser does the DNS(DOMAIN NAME SERVER) query.
+    {DNS- KEY,VALUE PAIR}
+    -for every URL(Booking.com,facebook.com etc) this DNS has some mapping of the corresponding IP Addresses.
+    -there is also a cache memory (local copy)of DNS in our browser.
+    -first browser checks in local cache ,if yes then goes to DNS and proceed.
+    -if not then it goes to ISP(internet service provider) (DNS) and then gets the IP.
+    -ISP also contains a copy of ip and url mapping.
+                -(DNS-Tree based structure.)
+        
+    once we have the IP Address of Google.com ,do we directly hit the server?no
+    IP Address-> Load Balancer - choose the most healthy server(RPC Servers,application server etc)--(microservices,caching,3rd party services etc)-then finally hit the google server
+
+
+        #Tech stack for Backend Development
+                -JS
+                -NodeJS
+                -ExpressJS
+                -ORM
+                -SQL/NOSQL DB
+                -microservices
+                -Testing
+                -AWS S3 , EC2 , Beanstalk
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+#Introduction to JS
+    -Original name was Ecmascript.
+    -4 pillars of javascrip     
+            -coercion
+            -scopes
+            -oops
+            -async nature of js
+
+
+#1Coercion - Type conversion
+        -whenever we do an operation based on the input , we can actually convert(convert type of input) the input for the operation.
+        this conversion can be done manually(explicit type casting/conversion) or the language based on certain rules automatically(implicit type casting) converts the type.
+        implicit type conversion is also called coercion.
+
+  #1.1Abstract operations 
+    -these are some sort of algorithm that are present in the Ecmascript docs.but these are not avialble for usage in Ecmascript i.e we developer cant use these operation directly.
+    -not a part of Ecmascript(javascript) language.
+    -they are defined here to solely aid the specification of semantics of Ecmascript language.
+    -in the ecma docs there are a lot of things that are done by the language internally.to explain these internal details of how and what language is doing, we have abstract operation.
+   #1.1.1 - Type conversion
+        the Ecmascript language implicitly performs automatatic type conversion using abstract operation.
+        these abstract operation takes valid js data types(primitive as well as non primitive ) as input.
+
+    #1.1.2 - ToNumber abstract operation
+        -whatever argument is passed to ToNumber ,it converts it to ToNumber
+        i.e if argument is undefiend - it converts into NaN
+            -Null - +0
+            -Boolean -true-1
+                     -FALSE-0
+            -Number - Number
+         Ques- why undefiend converts into nan and null into +0;
+                these are from language semantics.
+    
+    -js converts a string to number character by character
+    
+- if argument type is symbol, it throws error.
+- if argument type is object in abstract operation then it does two thing 1. ToPrimitive
+                                                                            2. ToNumber
+    
+
+
+        
+            
+
+
