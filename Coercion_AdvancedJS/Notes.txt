@@ -110,6 +110,60 @@ Ques- What happens when you hit Www.google.com on our browser? what goes behind 
                             }
         
             
-# The Addition Operator +
-    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    #ToBoolean abstract operation:
+        ToBoolean(argument);
+            if argument is passed "undefiend"- returns false
+             if argument is passed "Null"- returns false
+             if argument is passed "Boolean"-returns argument
+             if argument is passed "Number( +0,-0,NaN)"-returns FALSE,else true
+             if argumemt is passed empty string - returns false
+        undefiend,null,+0,-0,false,empty string - these are falsy values , if passed to ToBoolean,returns false;
+         -29- truthy value, ToBoolean would return true.
+
+
+#Abstract equality and strict equality comparison
+        -both checks the types of the operands.
+        AEC(undefiend,null)- returns true
+        AEC(Number,String)-returns AEC(Number,ToNumber(string)-again does the comparison)
+         AEC(String,Number)-returns AEC(ToNumber(string),Number-again does the comparison)
+         AEC(Boolean,-)- conerts boolean tonumber ,doesnt matter the second args inmput is-and again do the comparison.
+         AEC((String,number,symbol),obj)-toprimitve on obj and then again compare
+           AEC(obj,(String,number,symbol))-toprimitve on obj and then again compare
+
+    #strict equality comparison
+        if type of x and type of y are diff-return  immediately false
+            if x is a number :
+                    if x is Nan - dont care what the value of y is just return false
+                    if y is Nan -dont care what the value of x is just return false
+                    SEC(0,-0)-returns true
+                    sec(-0,0)-returns true
+            if other than number then call samevaluenonnumber();
+            typeof x is undefiend=return true;
+            typeof x is null - return true;
+            typeof x is string , do lenght wise and charcer by character comparison.
+            typeof x is symbol, typeof y is also symbol-return true
+
+
+#ToString abstract operation
+        ToString(argumemt);
+        undefiend-undefiend
+        null-null
+        number-calls numbertostring();
+        string-return argumemt;
+        symbol-TypeError
+        boolean -return true/false
+        obj-call toprimitve(with hint string)-calls tostring();
+        
+
+
+            
+
+         
+
+
+            
+
+
+  
 
