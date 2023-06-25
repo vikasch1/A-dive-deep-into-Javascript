@@ -1,3 +1,21 @@
 == does coercion
 === doesnt do coercion.
 
+isNaN function does the coercion.
+Number.isNaN function doesnt do coercion.
+
+Negative zero- when we work with vector(direction + magnitude) quantity.
+        -Object.is function
+
+
+#Boxing ,AutoBoxing
+        -js types(primitive) gets converted to non primitves if we apply boxing concept.
+        - converts primitve to object types
+        i.e Number(1).toString();
+        i.e (1).toString();
+        
+
+
+
+
+
