@@ -1,0 +1,62 @@
+#SCOPES
+    -a concept of visibility.
+    -visibility of variables and functions
+    
+-everything(i.e variables and functions) inside our code will be used in one of the following two ways;
+            -either it will be getting some value assigned to it  OR
+            -some value will be retrieved from it.
+
+
+Ques- is js compiled ? is js interpreted?
+[compiled languages - in a compiled languages, there is one thing called compiler, it reads the whole code and spot all the mistakes ,throws errors and recompiles,once its free from bugs or semantically correct then it passes on the code.i.e c/c++ etc]
+[interpreted languages-process involved is interpreter ,it doesnt read the whole code at a time, it reads line by line .i.e shell scripting ]
+[java - is neither purely compiled or interpreted. its hybrid . java code turns into byte code(the process itself is compiled one)]
+
+ function fun(){
+    console...log("hello);
+    return 0;
+ }
+ console.log("hi);
+ console..log("bye);
+
+ if js would have been purely interpreted language then it should have printed "hi" but it has thrown error.that means js is not purely interpreted.
+ 
+--js -[parsing phase +execution stage]
+                                var teacher ="vikas";
+                                function fun(){
+                                    var teacher="puneet";
+                                    console.log(teacher);
+                                }
+                                function gun(){
+                                    var student="parekh";
+                                    console.log(student);
+                                }
+
+
+                                fun(); //puneet
+                                gun();//parekh
+                                console.log(teacher);//vikas
+                -in parsing phase- teacher,fun,gun -global scoped
+                                    -student,teacher-function scope of fun n gun.
+
+
+                what happens during parsing ?
+                        step1- scope resolution done
+            
+            #in js there are three types of scopes.
+            1-Global scope --like static in java (globally available)
+            2-functions scope--within a function
+            3-block scope--declared with const and let 
+            3.1-Module scope
+
+    -var is only available for function scoping and global scoping.
+    -let is for blocked level scoping.
+
+
+
+
+
+           
+
+
+
