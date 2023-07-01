@@ -53,6 +53,12 @@ Ques- is js compiled ? is js interpreted?
     -let is for blocked level scoping.
 
 
+# Lexical vs dynamic scope
+        -lexical word comes from lex (compiler),the scoping of the variable is defiend at compile time (before execution phase)
+        -in dynamic scoping during run time scoping is determined i,e bash script ,shell script language etc
+        -
+
+
 
 
 
