@@ -1,0 +1,14 @@
+HOF-Higher order functions
+-there are functions which take another function as arguments.
+
+
+#Callbacks
+#callback hell
+#promises hell
+#async await hell
+
+
+problems with Callbacks
+    -inversion of control
+    -callback hell
+    
