@@ -1,0 +1,28 @@
+#let block scoping 
+    -blocked scope {}
+    -gives TDZ if accesssed before declaration.
+    -only avilable post declaration.
+    -let doesnt allow redeclaration.
+
+
+#var scope gives function scope.
+-can access it before declaration .
+-result can be undefined but it wont throw any refernece error.
+-var allows redeclaration.
+
+#const -bloakced statment as let
+-reassignment is not allowed
+-cant have uninitilized const.
+-if conts is an object or an array its properties can bbe modified.
+
+
+
+ques- TDZ exist for const?
+
+
+# first valid expression of the line where we are defining a function thats "funcation declaration is "function
+
+#function expression  (not starting with keyword function)
+
+
+
