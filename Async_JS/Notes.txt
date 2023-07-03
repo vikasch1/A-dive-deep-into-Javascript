@@ -11,4 +11,35 @@ HOF-Higher order functions
 problems with Callbacks
     -inversion of control
     -callback hell
+
+-------------------------------------ASYNC NATURE OF JS-----------------------------------------------------------------------------------------------------------------------------------
+ques- what is the nature of js?
+-JS is synchronous in nature
+-Js is single threaded.
+-default nature is synchronous.
+all of these are only applicable if we execute valid ecmascript code given by the standard.
+-i.e for loop
+                        console.log("hello we are starting");
+                for(let i=0;i<100000000000;i++){
+                    //do some task                  -js is waiting till the execution of loop.
+                }
+                console.log("we are done");
+-if some tasks are native to js then js will wait n execute (doesnt matter how much time it would take)them i.e loops
+but if sometasks which are not native to js (or documented in ecmascript docs),or which are provided at run time (i.e settimeout.DOM BOM APIs)js works as async .
+
+
+#in js run time - stack+heap+queue(some)
+-native piece(synchronous in nature) of js code -a new entry is made in call stack.
+    -js will get blocked here. js is waiting here ,not moving forward
     
+-non native code - js will notify the run time and js come back to native code .
+
+-js gives priority to native code only. js wont stop for run time feature but there is something called event queue. js sends the run time code to event queue.
+
+    [event loop-it checks constantly if the call stack is done or if no more global piece of code is done].
+
+-even loop , event queue - js code become non blocking.
+
+
+
+
