@@ -1,0 +1,52 @@
+------------------------------PROMISES-----------------------------
+-PROBLEMS WITH CALLBACKS
+    -inversion of control
+    -callback hell - code readablity problems
+to resolve all of these we have promises.
+its basically a coding pattern.
+-readablity emhancers.
+    -code readablity
+    -also solves problem of inversion of control.
+
+-in js promises are special type of objects that get returned immediately when we call them.
+-promises acts as a placeholder for the data we hope to get back sometime in future.
+i.e x= fetch(url)l; //download the content of the url. it will take time to download data(time consuming call, we cant expect it to be immediately completed since this is not a native call ,(its running from run time env),js will not wait ,it will move forward)
+ if lets assume fetch function is written with promises then it will immediately return a promoise object which will act as a placeholder.
+ placeholder for the result (we expecting as output).
+ -in these promise object we can attach the functionalities we want to execute once the future task is done.
+ -promise objects are native to js which means these are synchronos in nature (creating a promise).
+
+
+ Q1-How we can create a promise?
+ Q2-How can we consume a promise?
+
+            PROMISE
+            -May be we fulfill the promise
+            -May be we dont fulfill the promise.
+
+# three states of a promise object
+        -pending-when we create a promise objects pending state (state is also a property inside a promise object)is the default state (work is in progress)
+        -fulfilled-this migrates to fulfilled if the operation is succesfully completed. then state property of promise object moved from pending to fullfiulled state.
+        -rejected-if operation is not succesfully completed.
+
+#creating a promise object
+        new (keyword) promise(cb)              //promise constructor- it expects a call back function.
+                //cb-executor function
+
+    new problem(function(){                     //this callback function expects two params i.e resolve ,reject
+                //inside this cb function we can write any time consuming task or any taks.
+    })
+
+
+   -whenever in the implementation of executor function we call resolve function,the promise goes to fullfilled state (from pending to fullfilled).
+   and if we call reject function,it goes to rejected state and if we dont call any function then promise remains in pending state only.
+
+
+# apart from state property in promise opbject ,it also has a value property.
+-till the time state is pending value is undefined.
+-the moment we go to fullfilled or rejected state then this value can change.
+-when we calling the resolve function (with string ,object or some args),after moving to a fullfilled state the value gets updated with the argument of resolve.
+-same goes with reject state.
+
+
+
