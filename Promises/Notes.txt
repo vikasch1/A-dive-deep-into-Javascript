@@ -49,4 +49,28 @@ i.e x= fetch(url)l; //download the content of the url. it will take time to down
 -same goes with reject state.
 
 
+------------------------------CONSUMING A PROMISE------------------------------------------------------------------
+we have .then()function to add as an attachment ot our promise object,it takes 2 params(functions).
+these are handle function which we shave to implement inside them.
+-.then(fullfillment handler, rejectionhandler)
+-.then() works like a register which registers our code to promise arrays(onfulfillment,onrejection).
+
+
+
+
+-apart from callback queue ,there is one more queue i.e microtask/job queue.
+-inside a promise object ,there are these properties present inside the object
+                            -value
+                            -state
+                            -onfulfillment -array[f,g]
+                            -onrejection -array[h,i]
+
+**At any point of time if event loop has a choice to pick from microtask queue or callback queue then it always gives prefernece to microtask queue.
+
+
+
+
+
+
+
 
