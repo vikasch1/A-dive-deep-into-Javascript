@@ -42,4 +42,10 @@ but if sometasks which are not native to js (or documented in ecmascript docs),o
 
 
 
+----------------------------------------------EXAMPLES OF ASYNC BEHAVIOUR OF JS WITH CALLBACKS---------------------------------------------------------------------------------------------------------------------
+1- console.log is not a native code of js documented in ecmascript. it is provided by run time env.
+-console.log is synchronous or asynchronous? its dependent on runtime env.
+
+
+
 
