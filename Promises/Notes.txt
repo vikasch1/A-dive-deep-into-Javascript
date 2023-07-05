@@ -1,3 +1,4 @@
+fb(23)
 ------------------------------PROMISES-----------------------------
 -PROBLEMS WITH CALLBACKS
     -inversion of control
@@ -66,6 +67,12 @@ these are handle function which we shave to implement inside them.
                             -onrejection -array[h,i]
 
 **At any point of time if event loop has a choice to pick from microtask queue or callback queue then it always gives prefernece to microtask queue.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+order of priority-callstack (along with global piece of code)>microtask queue>cal back queue.
+
+
+# .then() also returns a  new promise object. it immediately returns a new promise object. we can use this promise object to chain a bunch of .then().
 
 
 
