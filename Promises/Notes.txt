@@ -75,7 +75,7 @@ order of priority-callstack (along with global piece of code)>microtask queue>ca
 # .then() also returns a  new promise object. it immediately returns a new promise object. we can use this promise object to chain a bunch of .then().
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
