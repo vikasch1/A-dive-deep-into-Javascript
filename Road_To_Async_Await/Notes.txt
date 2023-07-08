@@ -1,0 +1,23 @@
+functions are first class citizen in js environemnt (community jargon).[we can return functions from function, pass function as argument etc etc].
+Closure-Remember your context.
+-persistent memory location for all the previous variables.
+-closing over values
+-symbolic to remembering the scope of variable.
+-inner function remembers/have snapchot of lexical scopes of its outer function even after the outer function is already executed and is wipe out nfrom the call stack.
+
+                    (types of programming languages -imperative language and declarative language)
+#Iterators
+-here we actually dedicatedly define the collection and mention the steps to get data from the collection.
+-it has two props i.e value and done.
+-with every Iterators we have next( function and it returns value and done )
+-done tells us if we have consumed all value from collection or not.
+-Iterators are basically used to achieve declarative programming from imperative programming .
+
+#Generators
+    -these are functions whose execution is not continous. we can break the execution in bw and restart after some time.
+    -function star syntax.
+    -they always return a Iterators.
+    -YIELD keyword.=similar to return but not a return.
+    -the execution of Generator function doesnt start when calling the function.
+
+
