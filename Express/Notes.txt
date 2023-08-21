@@ -1,0 +1,37 @@
+     Client server architecture 
+        - type of a mental model
+        client - any end system(mobile,browser,process etc) which initiate/originates any type of request.
+        server- any end system which recieves a request and spits out a response.
+
+
+        API-Application programming interface
+            -interface-kind of a contract of application programming.
+            
+        REST-Representational state transfer
+            -rules/protocols have to be followed + some recommendations.
+            -Rest is basically a set of guidelines that drives the architecture of web.
+            -standard guidelines.
+            -REST API- any api that follows the recommendations of REST is REST API.
+
+            Rest provides a bunch of guidelines to prepare api.
+                -rest prefers a client server communication should happen over http.
+                -rest prefers json as the format to send and recieve data.
+                -rest gives guidelines on how the url should look like.
+                -in rest the main source of info is considered as resource.
+                i.e tweet is a resource but create tweet/delete tweer is an action.
+                resource consider as noun and actions are considered as verbs.
+                -the end points/url should be noun not verbs. i.e medium.com/blogs
+                                                                medium.com/blogs/1
+                -these nouns should be plural.the noun that we mention are expected to be plural 
+                -every rest end point should be defined along with a http method(get put post patch delete etc)
+                            -GET -retrieve some data 
+                            -POST - sending data /creating resource
+                            -DELETE - delete medium.com/blogs, deleet a resource
+                            PUT- Update a resource
+                            -patch- partially update a resource
+                -rest expects the response to have http codes.
+                
+                        
+                            
+                 
+            
